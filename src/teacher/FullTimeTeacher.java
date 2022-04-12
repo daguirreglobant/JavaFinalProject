@@ -12,9 +12,9 @@ public class FullTimeTeacher extends Teacher{
     }
 
     @Override
-    public ArrayList<String> getData() {
-        ArrayList<String> data = super.getData();
-        data.add(0, "Type: Full time teacher");
+    public ArrayList<String> getTeacherInfo() {
+        ArrayList<String> data = super.getTeacherInfo();
+        data.add(1, "Type: Full time teacher");
         data.add("Experience years: " + String.valueOf(this.experienceYears));
         return data;
     }

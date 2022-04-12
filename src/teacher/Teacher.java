@@ -18,7 +18,7 @@ public class Teacher {
         Teacher.baseSalary = baseSalary;
     }
 
-    public ArrayList<String> getData(){
+    public ArrayList<String> getTeacherInfo(){
         ArrayList<String> data = new ArrayList<>();
         data.add("Name: " + this.name);
         data.add("Salary: " + String.valueOf(this.salary) + " USD");
