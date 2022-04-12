@@ -1,3 +1,5 @@
+package university;
+
 import java.util.ArrayList;
 
 public class Student {
@@ -6,14 +8,14 @@ public class Student {
     private final int age;
     private final ArrayList<Course> courses;
 
-    Student(int id, String name, int age){
+    public Student(int id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.courses = new ArrayList<>();
     }
 
-    public void addCourse(Course course){
+    public void addCourse(Course course) {
         this.courses.add(course);
     }
 
@@ -21,7 +23,7 @@ public class Student {
         return this.name;
     }
 
-    public int getId(){
+    public int getId() {
         return this.id;
     }
 

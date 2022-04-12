@@ -1,4 +1,4 @@
-package teacher;
+package university.teacher;
 
 import java.util.ArrayList;
 
