@@ -3,7 +3,7 @@ package teacher;
 import java.util.ArrayList;
 
 public class FullTimeTeacher extends Teacher{
-    private int experienceYears;
+    private final int experienceYears;
 
     public FullTimeTeacher(String name, int experienceYears){
         super(name);
@@ -15,7 +15,7 @@ public class FullTimeTeacher extends Teacher{
     public ArrayList<String> getTeacherInfo() {
         ArrayList<String> data = super.getTeacherInfo();
         data.add(1, "Type: Full time teacher");
-        data.add("Experience years: " + String.valueOf(this.experienceYears));
+        data.add("Experience years: " + this.experienceYears);
         return data;
     }
 }

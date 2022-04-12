@@ -3,7 +3,7 @@ package teacher;
 import java.util.ArrayList;
 
 public class PartTimeTeacher extends Teacher{
-    final private float activeHoursPerWeek;
+    private final float activeHoursPerWeek;
 
     public PartTimeTeacher(String name, float activeHoursPerWeek){
         super(name);
@@ -14,7 +14,7 @@ public class PartTimeTeacher extends Teacher{
     public ArrayList<String> getTeacherInfo() {
         ArrayList<String> data = super.getTeacherInfo();
         data.add(1, "Type: Part time teacher");
-        data.add("Active hours per week: " + String.valueOf(this.activeHoursPerWeek) + " hours");
+        data.add("Active hours per week: " + this.activeHoursPerWeek + " hours");
         return data;
     }
 }
