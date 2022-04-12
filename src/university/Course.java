@@ -1,33 +1,32 @@
-import teacher.Teacher;
+package university;
+
+import university.teacher.Teacher;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Course {
     private final String name;
     private final String classroom;
+    private final List<Student> students;
     private Teacher teacher;
-    private final ArrayList<Student> students;
 
-    Course(String name, String classroom){
+    public Course(String name, String classroom) {
         this(name, classroom, null);
     }
 
-    Course(String name, String classroom, Teacher teacher){
-        this(name, classroom, teacher,  new ArrayList<>());
+    public Course(String name, String classroom, Teacher teacher) {
+        this(name, classroom, teacher, new ArrayList<>());
     }
 
-    Course(String name, String classroom, Teacher teacher, ArrayList<Student> students){
+    public Course(String name, String classroom, Teacher teacher, List<Student> students) {
         this.name = name;
         this.classroom = classroom;
         this.students = students;
         this.teacher = teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
-    public void addStudent(Student student){
+    public void addStudent(Student student) {
         this.students.add(student);
     }
 
@@ -43,7 +42,11 @@ public class Course {
         return teacher;
     }
 
-    public ArrayList<Student> getStudents() {
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    public List<Student> getStudents() {
         return students;
     }
 }
