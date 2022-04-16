@@ -1,9 +1,9 @@
-package teacher;
+package university.teacher;
 
 import java.util.ArrayList;
 
 public class Teacher {
-    protected String name;
+    protected final String name;
     static float baseSalary = 1000;
     protected float salary;
 
@@ -18,10 +18,10 @@ public class Teacher {
         Teacher.baseSalary = baseSalary;
     }
 
-    public ArrayList<String> getData(){
+    public ArrayList<String> getTeacherInfo(){
         ArrayList<String> data = new ArrayList<>();
         data.add("Name: " + this.name);
-        data.add("Salary: " + String.valueOf(this.salary) + " USD");
+        data.add("Salary: " + this.salary + " USD");
         return data;
     }
 }
