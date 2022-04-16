@@ -61,8 +61,8 @@ public class University {
         return this.teachers;
     }
 
-    public ArrayList<Course> getCoursesByStudentID(int studentID) {
-        return this.students.get(studentID).getCourses();
+    public Student getStudent(int studentID) {
+        return this.students.get(studentID);
     }
 
     public List<Course> getCourses() {
